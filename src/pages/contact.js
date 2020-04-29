@@ -14,7 +14,7 @@ const ContactPage = (props) => {
             <SEO site={data.siteMetadata} title="Gallery" />
             <section className="contact-section">
                 <Container >
-                    <Header text='Contact Me' />
+                    <Header text='Contact Me !' />
                     <br />
                     <ContactForm />
                 </Container>
