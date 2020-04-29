@@ -1,0 +1,23 @@
+@import "./colors.scss";
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+
+    li {
+      margin: 10px;
+    }
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
