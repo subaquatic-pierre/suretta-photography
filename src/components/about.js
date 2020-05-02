@@ -22,7 +22,7 @@ const About = () => {
                     <Container className='about-section'>
                         <Row >
                             <Col md={{ span: 6, order: 2 }} className='d-flex flex-column justify-content-center'>
-                                <h1 className="text-center">About me</h1>
+                                <h1 className="text-center about-heading">About me</h1>
                                 <Divider />
                                 <p className="my-4">Et pariatur consequat consequat elit veniam occaecat.
                                 Adipisicing et id nulla deserunt cupidatat ipsum sint.

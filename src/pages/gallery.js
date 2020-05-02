@@ -68,7 +68,7 @@ class MyGallery extends React.Component {
                 <SEO title={data.site.siteMetadata.title} />
                 <section className='gallery-section'>
                     <Container fluid className="gallery-container">
-                        <Header text='Gallery' />
+                        {/* <Header text='Gallery' /> */}
                         <br />
                         <Row className='image-nav-row' >
                             <Nav variant="pills" defaultActiveKey="wedding">

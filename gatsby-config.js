@@ -49,7 +49,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Oswald', 'Playfair Display', 'Dancing Script']
+          families: ['Amatic SC', 'Playfair Display', 'Dancing Script']
         }
       }
     },

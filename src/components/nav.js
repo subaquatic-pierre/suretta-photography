@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const CustomNav = () => {
   return (
-    <Navbar className='navbar' variant='dark' expand="md">
+    <Navbar className='navbar' expand="md">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav nav-button" />
         <Navbar.Collapse id="basic-navbar-nav">

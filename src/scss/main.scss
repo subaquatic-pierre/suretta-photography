@@ -71,6 +71,7 @@ $link-hover-decoration: none !default;
 @import "./hero.scss";
 @import "./nav.scss";
 @import "./splitsection.scss";
+@import "./logotop.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 html,
@@ -78,6 +79,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  background: rgb(223, 223, 223);
 }
 
 * {

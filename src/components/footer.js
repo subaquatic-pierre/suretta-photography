@@ -15,7 +15,6 @@ const Footer = ({ author, title }) => (
           </p>
         </Col>
         <Col md={6} xs={12} >
-          <img alt='Logo' className="navbar-brand mb-5" src={'/img/logo.png'} />
         </Col>
         <Col md={3} xs={12} className='col'>
           <ul >

@@ -427,7 +427,6 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
 }
 
 .gallery-section {
-  background-color: black;
   .header-div {
     color: white;
   }
@@ -445,4 +444,8 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
   .image-nav-row {
     padding: 0 3rem;
   }
+}
+
+.nav-link.active {
+  background-color: rgb(255, 255, 255) !important;
 }
