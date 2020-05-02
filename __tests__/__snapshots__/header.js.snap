@@ -4,9 +4,6 @@ exports[`Header renders correctly 1`] = `
 <div
   className="header-div"
 >
-  <div
-    className="mx-auto divider"
-  />
   <h1 />
   <div
     className="mx-auto divider"

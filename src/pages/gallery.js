@@ -45,7 +45,7 @@ class MyGallery extends React.Component {
         categoryData.forEach(edge => {
             images.push(
                 {
-                    original: edge.node.childImageSharp.fluid.originalImg,
+                    original: edge.node.childImageSharp.fluid.srcWebp,
                     thumbnail: this.getThumbnail(edge)
                 }
             )
