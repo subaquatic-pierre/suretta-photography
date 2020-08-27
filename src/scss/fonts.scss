@@ -1,7 +1,7 @@
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: -apple-system, "Playfair Display", BlinkMacSystemFont,
-  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif: "Railway", BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
@@ -17,16 +17,16 @@ $font-weight-bold: bold !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$h1-font-size: 2rem !default;
-$h2-font-size: 1.6rem !default;
+$h1-font-size: 2.5rem !default;
+$h2-font-size: 2rem !default;
 $h3-font-size: 1.4rem !default;
 $h4-font-size: 1.3rem !default;
 $h5-font-size: 1.05rem !default;
 $h6-font-size: 1rem !default;
 
 // $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family: "Amatic SC" !default;
-$headings-font-weight: 700 !default;
+$headings-font-family: "Playfair Display" !default;
+$headings-font-weight: 400 !default;
 $headings-line-height: 1.5 !default;
 $headings-color: inherit !default;
 

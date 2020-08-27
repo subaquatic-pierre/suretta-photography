@@ -46,12 +46,23 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ['Amatic SC', 'Playfair Display', 'Dancing Script']
-        }
-      }
+        fonts: [
+          {
+            family: `Pinyon Script`,
+            variants: [`400`]
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`]
+          },
+          {
+            family: `Playfair Display`,
+            variants: [`400`]
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
