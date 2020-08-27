@@ -50,8 +50,8 @@ export const pageQuery = graphql`
       edges {
         node {
         childImageSharp {
-          fluid {
-              ...GatsbyImageSharpFluid
+          fixed {
+              ...GatsbyImageSharpFixed
             }
           }
         }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `SurettaVenterPhotography`,
+    title: `Suretta Venter Photography`,
     author: {
       name: `Pierre du Toit`,
       summary: `Building websites`,

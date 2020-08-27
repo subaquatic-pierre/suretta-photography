@@ -3,7 +3,10 @@ import React from 'react';
 const LogoTop = () => {
     return (
         <div className='logo-top'>
-            <img src='img/logo.png' />
+            <div className='logo-img'>
+                <img src='img/logo.png' />
+
+            </div>
         </div>
     )
 }

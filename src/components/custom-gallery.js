@@ -38,26 +38,57 @@ class CustomGallery extends React.Component {
 
     buildImageList = (data) => {
         let images = []
+        const image1 = {
+            src: data.edges[1].node.childImageSharp.fixed.src,
+            width: 1,
+            height: 2
+        }
+
+        const image3 = {
+            src: data.edges[2].node.childImageSharp.fixed.src,
+            width: 1,
+            height: 1
+        }
+        const image4 = {
+            src: data.edges[4].node.childImageSharp.fixed.src,
+            width: 3,
+            height: 1
+        }
+        const image2 = {
+            src: data.edges[5].node.childImageSharp.fixed.src,
+            width: 1,
+            height: 1
+        }
+
+        const nextcool = {}
+        const cool = data.edges.reduce((_, cur, indx) => {
+            return {
+                [indx]: cur.node.childImageSharp.fixed.src,
+                some: 'some'
+            }
+        }, nextcool)
+        console.log(nextcool)
+        console.log(cool)
         data.edges.forEach(edge => {
             let width = Math.floor(Math.random() * 4) + 1
             let height = Math.floor(Math.random() * 4) + 1
             images.push(
                 {
-                    src: edge.node.childImageSharp.fluid.src,
+                    src: edge.node.childImageSharp.fixed.src,
                     width: width,
                     height: height
                 }
             )
         })
-        return images
+        return [image1, image2, image3, image4]
     }
 
     render() {
         const { images, currentImage, viewerIsOpen } = this.state
         return (
             <>
-                <Container>
-                    <Gallery photos={images} onClick={this.handleOpenLightBox} />
+                <Container className='mb-4'>
+                    <Gallery photos={images} direction='row' onClick={this.handleOpenLightBox} />
                 </Container>
                 <ModalGateway>
                     {viewerIsOpen ? (
