@@ -6,14 +6,14 @@ const SplitSection = () => {
     return (
         <StaticQuery query={graphql`
             query SplitImages {
-                pic1: file(name: {eq: "split1"}) {
+                pic1: file(name: {eq: "pexels-oleg-magni-918448"}) {
                     childImageSharp {
                         sizes (quality: 100){
                         ...GatsbyImageSharpSizes_withWebp
                         }
                     }
                 }
-                pic2: file(name: {eq: "split2"}) {
+                pic2: file(name: {eq: "beatriz-perez-moya-M2T1j-6Fn8w-unsplash"}) {
                     childImageSharp {
                         sizes (quality: 100){
                         ...GatsbyImageSharpSizes_withWebp

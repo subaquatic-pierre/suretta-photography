@@ -19,8 +19,8 @@ const About = () => {
         `}
             render={data => (
                 <section>
-                    <Container fluid className='about-section'>
-                        <Row className='justify-content-center'>
+                    <Container fluid className='about-section animate__animated animate__bounce animate__delay-2s'>
+                        <Row className='justify-content-center '>
                             <Col md={3} className='d-flex flex-column mx-md-3 justify-content-center'>
                                 <h1 className="text-center about-heading">About me</h1>
                                 <Divider />
