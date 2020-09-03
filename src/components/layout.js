@@ -6,7 +6,7 @@ import LogoTop from './logotop';
 
 const Layout = ({ title, children }) => {
   return (
-    <div>
+    <div className='full-height'>
       <header>
         <LogoTop />
         <Nav />

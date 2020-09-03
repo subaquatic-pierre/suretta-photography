@@ -132,3 +132,10 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}

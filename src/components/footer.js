@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap';
 
 const Footer = ({ author, title }) => (
-  <footer className="footer row text-white">
+  <footer className="footer row text-white mt-auto">
     <Container>
       <Row>
         <Col md={3} xs={12} className='col'>
