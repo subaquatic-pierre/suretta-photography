@@ -51,8 +51,8 @@ class CustomGallery extends React.Component {
         }
         const image4 = {
             src: data.edges[4].node.childImageSharp.fixed.src,
-            width: 3,
-            height: 1
+            width: 4,
+            height: 2
         }
         const image2 = {
             src: data.edges[5].node.childImageSharp.fixed.src,
@@ -60,15 +60,6 @@ class CustomGallery extends React.Component {
             height: 1
         }
 
-        const nextcool = {}
-        const cool = data.edges.reduce((_, cur, indx) => {
-            return {
-                [indx]: cur.node.childImageSharp.fixed.src,
-                some: 'some'
-            }
-        }, nextcool)
-        console.log(nextcool)
-        console.log(cool)
         data.edges.forEach(edge => {
             let width = Math.floor(Math.random() * 4) + 1
             let height = Math.floor(Math.random() * 4) + 1

@@ -1,16 +1,18 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from "gatsby"
+import Divider from './divider'
 
 const Banner = () => {
     return (
         <section>
             <div className='banner'>
                 <Container className='banner-container'>
-                    <h1>Amazing stuff</h1>
-                    <p>Check out my awesome gallery</p>
+                    <h1 className='banner-header'>Gallery</h1>
+                    <Divider />
+                    <p className='banner-text'>Check out my awesome gallery</p>
                     <Link to='/gallery'>
-                        <button className='gallery-button'><h4>Gallery</h4></button>
+                        <button className='gallery-button'><h4>More ...</h4></button>
                     </Link>
 
                 </Container>

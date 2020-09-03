@@ -30,6 +30,9 @@ const BlogIndex = ({ data }) => {
       <br />
       <Banner />
       <Heading text='Contact Me' />
+      <div className='d-flex mt-3'>
+        <p className='mx-auto d-inline'>Get in touch with me for you next photoshoot!</p>
+      </div>
       <br />
       <ContactForm />
     </Layout>

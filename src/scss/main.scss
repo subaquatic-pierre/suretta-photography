@@ -116,3 +116,15 @@ img {
   margin-bottom: 15px;
   max-width: 100%;
 }
+
+.react-photo-gallery--gallery img {
+  object-fit: cover;
+}
+
+.banner-text {
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.banner-header {
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
