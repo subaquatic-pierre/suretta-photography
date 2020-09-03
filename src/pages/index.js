@@ -20,21 +20,22 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title={siteTitle} />
+      <SEO title={`Home - ${siteTitle}`} />
       <Hero />
       <About />
       <SplitSection />
-      <Heading text='Some of my Favourites' />
-      <br />
       <CustomGallery data={data.allFile} />
       <br />
       <Banner />
-      <Heading text='Contact Me' />
-      <div className='d-flex mt-3'>
-        <p className='mx-auto d-inline'>Get in touch with me for you next photoshoot!</p>
+      <div className='contact-container'>
+        <Heading text='Contact Me' />
+
+        <div className='d-flex mt-3'>
+          <p className='mx-auto d-inline text-center'>Get in touch with me for you next photoshoot!</p>
+        </div>
+        <br />
+        <ContactForm />
       </div>
-      <br />
-      <ContactForm />
     </Layout>
 
   )
@@ -47,15 +48,15 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
+        }
     }
     allFile(limit:6, filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}sourceInstanceName: {eq: "images"}}) {
-      edges {
+        edges {
         node {
         childImageSharp {
-          fixed {
-              ...GatsbyImageSharpFixed
-            }
+        fixed {
+        ...GatsbyImageSharpFixed
+      }
           }
         }
       }

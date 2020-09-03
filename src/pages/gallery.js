@@ -5,7 +5,7 @@ import ImageGallery from 'react-image-gallery';
 import SEO from "../components/seo"
 
 import Layout from '../components/layout'
-import Header from '../components/heading'
+import Divider from '../components/divider'
 import { Container, Nav, Row } from 'react-bootstrap';
 
 class MyGallery extends React.Component {
@@ -65,12 +65,13 @@ class MyGallery extends React.Component {
         const { images } = this.state
         return (
             <Layout location={location}>
-                <SEO title={data.site.siteMetadata.title} />
+                <SEO title={`Gallery - ${data.site.siteMetadata.title}`} />
                 <section className='gallery-section'>
                     <Container fluid className="gallery-container">
-                        {/* <Header text='Gallery' /> */}
+                        <h1 className='text-center'>Gallery</h1>
+                        <Divider />
                         <br />
-                        <Row className='image-nav-row' >
+                        <Row className='image-nav-row px-4' >
                             <Nav variant="pills" defaultActiveKey="wedding">
                                 <Nav.Item>
                                     <Nav.Link onClick={() => { this.buildImageList('wedding', data) }} eventKey='wedding' >Wedding</Nav.Link>

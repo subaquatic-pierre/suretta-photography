@@ -4,17 +4,20 @@ import { graphql } from 'gatsby'
 
 import SEO from "../components/seo"
 import Layout from '../components/layout'
-import Header from '../components/heading'
+import Heading from '../components/heading'
 import { Container } from 'react-bootstrap';
 
 const ContactPage = (props) => {
     const { data, location } = props
     return (
         <Layout location={location}>
-            <SEO site={data.siteMetadata} title="Gallery" />
+            <SEO title={`Contact - ${data.site.siteMetadata.title}`} />
             <section className="contact-section">
                 <Container >
-                    {/* <Header text='Contact Me !' /> */}
+                    <Heading text='Contact Me' />
+                    <div className='d-flex mt-3'>
+                        <p className='mx-auto text-center d-inline'>Get in touch with me for you next photoshoot!</p>
+                    </div>
                     <br />
                     <ContactForm />
                 </Container>

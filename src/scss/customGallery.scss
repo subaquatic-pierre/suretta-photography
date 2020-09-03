@@ -1,0 +1,12 @@
+.custom-gallery {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 760px) {
+  .custom-gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

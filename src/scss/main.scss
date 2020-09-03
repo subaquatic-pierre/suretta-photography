@@ -72,6 +72,7 @@ $link-hover-decoration: none !default;
 @import "./nav.scss";
 @import "./splitsection.scss";
 @import "./logotop.scss";
+@import "./customGallery.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 html,
@@ -88,8 +89,6 @@ body {
 }
 
 p {
-  font-size: 17px;
-  line-height: 1.5;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
 }
@@ -127,4 +126,9 @@ img {
 
 .banner-header {
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

@@ -19,20 +19,18 @@ const About = () => {
         `}
             render={data => (
                 <section>
-                    <Container className='about-section'>
-                        <Row >
-                            <Col md={{ span: 6, order: 2 }} className='d-flex flex-column justify-content-center'>
+                    <Container fluid className='about-section'>
+                        <Row className='justify-content-center'>
+                            <Col md={3} className='d-flex flex-column mx-md-3 justify-content-center'>
                                 <h1 className="text-center about-heading">About me</h1>
                                 <Divider />
-                                <p className="my-4">Et pariatur consequat consequat elit veniam occaecat.
-                                Adipisicing et id nulla deserunt cupidatat ipsum sint.
-                                Sunt Lorem proident ipsum ut.
-                                Dolore anim veniam in elit dolore laboris.
-                                Aliquip dolore cillum consequat exercitation ipsum sit occaecat do eiusmod ea.
-                                Duis cupidatat nulla ullamco esse consequat incididunt eiusmod irure.
+                                <p className="my-4">A fully awesome lifestyle and wedding photographer. I have been shooting lifestyle photography
+                                for 10 years and I am the best. I can make you look like a king or queen in the best locations in the world. I am
+                                excellent at wedding photography, we go to the best places and take the best photos. I have the most awesome artistic
+                                eye for photgraphy. You will ove your photos garanteed!
                             </p>
                             </Col>
-                            <Col md={6}>
+                            <Col md={3} className='mx-md-3'>
                                 <Img fadeIn={true} className="image" fluid={data.user.childImageSharp.sizes} />
                             </Col>
                         </Row>

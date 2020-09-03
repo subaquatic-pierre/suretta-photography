@@ -4,8 +4,10 @@ const LogoTop = () => {
     return (
         <div className='logo-top'>
             <div className='logo-img'>
-                <img src='img/logo.png' />
+                <a href='/'>
+                    <img alt='Logo' src='img/logo.png' />
 
+                </a>
             </div>
         </div>
     )

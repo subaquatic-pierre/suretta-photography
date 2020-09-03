@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap';
 
@@ -7,35 +6,22 @@ const Footer = ({ author, title }) => (
     <Container>
       <Row>
         <Col md={3} xs={12} className='col'>
-          <p className='text-center mb-4'>&copy; {new Date().getFullYear()}
-            <Link to="/profile/">
-              <br />
-              <strong>{title}</strong>
-            </Link>
-          </p>
+          <div className='text-center mb-4'>&copy; {new Date().getFullYear()}
+            <p><a rel="noopener noreferrer" target="_blank" href="https://www.subaquatic-pierre.com">Designed by: subaquatic-pierre</a></p>
+          </div>
         </Col>
         <Col md={6} xs={12} >
         </Col>
         <Col md={3} xs={12} className='col'>
           <ul >
             <li>
-              <a href="https://www.facebook.com/blackpizza?fref=ts" target="_blank" rel="noopener noreferrer" title="Join us on Facebook" className="shr-btn-facebook">
+              <a href="https://www.facebook.com/SurettaVenterPhotography" target="_blank" rel="noopener noreferrer" title="Join us on Facebook" className="shr-btn-facebook">
                 <i className="fa fa-2x text-white fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="http://instagram.com/blackpizzastudio" target="_blank" rel="noopener noreferrer" title="Join us on Instagram" className="shr-btn-instagram">
+              <a href="https://www.instagram.com/surettaventerphotography/" target="_blank" rel="noopener noreferrer" title="Join us on Instagram" className="shr-btn-instagram">
                 <i className="fa fa-2x text-white fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/blackpizza" target="_blank" rel="noopener noreferrer" title="Join us on Behance" className="shr-btn-behance">
-                <i className="fa fa-2x text-white fa-behance"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://soundcloud.com/dailydose-sound" target="_blank" rel="noopener noreferrer" title="Join us on Soundcloud" className="shr-btn-soundcloud">
-                <i className="fa fa-2x text-white fa-soundcloud"></i>
               </a>
             </li>
           </ul>

@@ -1,7 +1,8 @@
 import React from 'react'
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from 'react-photo-gallery'
+import Heading from './heading';
 
 class CustomGallery extends React.Component {
     constructor(props) {
@@ -40,24 +41,24 @@ class CustomGallery extends React.Component {
         let images = []
         const image1 = {
             src: data.edges[1].node.childImageSharp.fixed.src,
-            width: 1,
-            height: 2
+            width: 4,
+            height: 3
         }
 
         const image3 = {
             src: data.edges[2].node.childImageSharp.fixed.src,
-            width: 1,
-            height: 1
+            width: 4,
+            height: 4
         }
         const image4 = {
             src: data.edges[4].node.childImageSharp.fixed.src,
             width: 4,
-            height: 2
+            height: 4
         }
         const image2 = {
             src: data.edges[5].node.childImageSharp.fixed.src,
-            width: 1,
-            height: 1
+            width: 3,
+            height: 2
         }
 
         data.edges.forEach(edge => {
@@ -78,8 +79,13 @@ class CustomGallery extends React.Component {
         const { images, currentImage, viewerIsOpen } = this.state
         return (
             <>
-                <Container className='mb-4'>
-                    <Gallery photos={images} direction='row' onClick={this.handleOpenLightBox} />
+                <Container fluid className='mb-4 custom-gallery'>
+                    <Row className='justify-content-center'>
+                        <Heading text='Some of my Favourites' />
+                        <Col md={10} className='mt-4'>
+                            <Gallery photos={images} direction='row' onClick={this.handleOpenLightBox} />
+                        </Col>
+                    </Row>
                 </Container>
                 <ModalGateway>
                     {viewerIsOpen ? (

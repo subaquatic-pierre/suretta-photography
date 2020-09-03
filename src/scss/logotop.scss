@@ -5,6 +5,13 @@
 }
 
 .logo-img {
-  width: 50%;
+  width: 80%;
   margin: 10px auto 0 auto;
+}
+
+@media (min-width: 760px) {
+  .logo-img {
+    width: 35%;
+    margin: 10px auto 0 auto;
+  }
 }
