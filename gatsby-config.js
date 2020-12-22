@@ -32,22 +32,24 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Pinyon Script`,
-            variants: [`400`]
-          },
-          {
-            family: `Roboto`,
-            variants: [`400`]
-          },
-          {
-            family: `Playfair Display`,
-            variants: [`400`]
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Pinyon Script`,
+              variants: [`400`]
+            },
+            {
+              family: `Roboto`,
+              variants: [`400`]
+            },
+            {
+              family: `Playfair Display`,
+              variants: [`400`]
+            },
+          ],
+        },
       },
     },
     {
